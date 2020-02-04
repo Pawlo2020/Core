@@ -1,0 +1,110 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dynamics"
+        xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" xmlns:UI_Elements="clr-namespace:Dynamics.UI_Elements" x:Class="Dynamics.MainWindow"
+        mc:Ignorable="d"
+        Title="Dynamics" Height="700" Width="1200" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" BorderBrush="#FF5F27CD">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <Rectangle x:Name="Menu_REC" Fill="#FF786FA6" HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="1200"/>
+        <Rectangle x:Name="Window_Bar" Fill="#192a56" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="1200" MouseDown="Window_MouseDown">
+            <Rectangle.OpacityMask>
+                <SolidColorBrush Color="#2f3640" Opacity="0.3"/>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <Button x:Name="minimizeBut" Content="" HorizontalAlignment="Left" Margin="1144,4,0,0" VerticalAlignment="Top" Width="24" Click="minimizeBut_Click" BorderBrush="{x:Null}" Height="24">
+            <Button.Background>
+                <ImageBrush ImageSource="UI Elements/minimize.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="closeBut" Content="X" HorizontalAlignment="Left" Margin="1168,4,0,0" VerticalAlignment="Top" Width="26" Click="closeBut_Click" Height="24" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" FontSize="16" RenderTransformOrigin="0.12,0.5" FontFamily="Segoe UI Semibold"/>
+        <Image x:Name="image_prof" HorizontalAlignment="Left" Height="48" Margin="1080,38,0,0" VerticalAlignment="Top" Width="48" Stretch="UniformToFill"/>
+        <Label x:Name="FN_LNlbl" Content="" HorizontalAlignment="Left" Height="32" Margin="846,45,0,0" VerticalAlignment="Top" Width="229" Foreground="#FFDFE6E9" FontSize="16" HorizontalContentAlignment="Right"/>
+        <Border x:Name="Service_BR" BorderThickness="1" HorizontalAlignment="Left" Height="56.9" Margin="0,34,0,0" VerticalAlignment="Top" Width="232.667"/>
+        <Rectangle x:Name="Service_BG" Fill="#FF574B90" HorizontalAlignment="Left" Height="56.9" Margin="0,34,0,0" VerticalAlignment="Top" Width="232.667"/>
+        <Label x:Name="Service_Name" FontFamily="Tw Cen MT" Content="Dynamics" HorizontalAlignment="Left" Height="37" Margin="81,43,0,0" VerticalAlignment="Top" Width="129" FontSize="28" Foreground="#FFDFE6E9" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-7.306"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="2.372"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="Dash_But" FontFamily="Tw Cen MT" Content="TABLICA" HorizontalAlignment="Left" Height="36" Margin="250,44,0,0" VerticalAlignment="Top" Width="86" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="Dash_But_Click"/>
+        <Button x:Name="Project_But" Content="PROJEKTY" FontFamily="Tw Cen MT" HorizontalAlignment="Left" Height="36" Margin="370,44,0,0" VerticalAlignment="Top" Width="86" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="Project_But_Click"/>
+        <Button x:Name="Calendar_But" Content="KALENDARZ" HorizontalAlignment="Left" FontFamily="Tw Cen MT" Height="36" Margin="488,44,0,0" VerticalAlignment="Top" Width="86" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="Calendar_But_Click"/>
+
+        <Button x:Name="Help_But" Content="POMOC" FontFamily="Tw Cen MT" HorizontalAlignment="Left" Height="36" Margin="604,44,0,0" VerticalAlignment="Top" Width="86" Background="{x:Null}" BorderBrush="White" Foreground="White" Click="Help_But_Click"/>
+        <Frame NavigationUIVisibility="Hidden" x:Name="frame" Content="" HorizontalAlignment="Left" Height="609.1" Margin="0,90.9,0,0" VerticalAlignment="Top" Width="1200" BorderBrush="#FF5F27CD"/>
+
+        <Grid Margin="24,39,1128,613">
+
+
+            <ed:RegularPolygon Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="47" InnerRadius="1" Margin="1,0,0,0" PointCount="6" Stretch="Fill" Stroke="#6c5ce7" VerticalAlignment="Top" Width="46"/>
+            <Rectangle Fill="#6c5ce7" HorizontalAlignment="Left" Height="1" Margin="0,17,0,0" VerticalAlignment="Top" Width="26" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="206.565"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle Fill="#6c5ce7" HorizontalAlignment="Left" Height="1" Margin="12,34,0,0" VerticalAlignment="Top" Width="24" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle Fill="#6c5ce7" HorizontalAlignment="Left" Height="1" Margin="23,17,0,0" VerticalAlignment="Top" Width="25" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="-206.565"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Rectangle Fill="#6c5ce7" HorizontalAlignment="Left" Height="1" Margin="1,29,0,0" VerticalAlignment="Top" Width="24" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                        <SkewTransform AngleY="0" AngleX="0"/>
+                        <RotateTransform Angle="-209.059"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+
+
+        </Grid>
+        <Button x:Name="button" Content="-" HorizontalAlignment="Left" Margin="1146,45,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="34" Height="35" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="menubut.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+
+
+        
+        <StackPanel Name="UserMenuStack" HorizontalAlignment="Left" Margin="1030,91,0,0" VerticalAlignment="Top" Width="160" Height="158" Visibility="Hidden"/>
+
+
+    </Grid>
+</Window>

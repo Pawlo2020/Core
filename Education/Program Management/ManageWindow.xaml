@@ -1,0 +1,37 @@
+﻿<Window x:Class="Education.Program_Management.ManageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Education.Program_Management"
+        mc:Ignorable="d"
+Title="Zaktualizuj dane" Height="560.946" Width="939.537" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#FFF0F0F0" AllowsTransparency="True" WindowStyle="None">
+    <Grid>
+        <Rectangle x:Name="Window_Bar" Fill="#192a56" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="940" MouseDown="Window_Bar_MouseDown">
+            <Rectangle.OpacityMask>
+                <SolidColorBrush Color="#2f3640" Opacity="0.3"/>
+            </Rectangle.OpacityMask>
+        </Rectangle>
+        <Button x:Name="minimizeBut" Content="" HorizontalAlignment="Left" Margin="880,5,0,0" VerticalAlignment="Top" Width="24" Click="minimizeBut_Click" BorderBrush="{x:Null}" Height="24">
+            <Button.Background>
+                <ImageBrush ImageSource="/Education;component/UI Elements/minimize.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="closeBut" Content="X" HorizontalAlignment="Left" Margin="909,5,0,0" VerticalAlignment="Top" Width="26" Click="closeBut_Click" Height="24" BorderBrush="{x:Null}" Foreground="White" Background="{x:Null}" FontSize="16" RenderTransformOrigin="0.12,0.5" FontFamily="Segoe UI Semibold"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="79" VerticalAlignment="Top" Width="940" Background="White" Margin="0,34,0,0">
+            <Label x:Name="DashboardLbl" Content="Nowy program edukacji" Margin="9,14,603,15" HorizontalAlignment="Center" FontSize="32" Width="326" FontFamily="Tw Cen MT" Foreground="#05c46b"/>
+        </Border>
+        <Rectangle HorizontalAlignment="Left" RadiusX="5" RadiusY="5" Height="44" Margin="10,50,0,0" Stroke="#05c46b" VerticalAlignment="Top" Width="321"/>
+        <StackPanel x:Name="STKUPDATE" HorizontalAlignment="Left" Height="448" Margin="0,113,0,0" VerticalAlignment="Top" Width="940"/>
+        <Rectangle Fill="#05c46b" HorizontalAlignment="Left" Height="24" Margin="359,50,0,0" VerticalAlignment="Top" Width="109"/>
+        <Label x:Name="programtime" Content="Etap" HorizontalAlignment="Left" Margin="359,50,0,0" VerticalAlignment="Top" Width="109" Foreground="White" VerticalContentAlignment="Center" FontSize="14" Height="24" HorizontalContentAlignment="Center" FontFamily="Tw Cen MT"/>
+        <Border BorderBrush="#05c46b" BorderThickness="1" HorizontalAlignment="Left" Height="48" Margin="468,50,0,0" VerticalAlignment="Top" Width="444"/>
+        <RadioButton x:Name="ElementaryRadio" Content="Szkoła podstawowa" HorizontalAlignment="Left" Margin="475,55,0,0" VerticalAlignment="Top" BorderBrush="#FF05C46B" Foreground="Black" Checked="ElementaryRadio_Checked"/>
+        <RadioButton x:Name="MiddleRadio" Content="Liceum" HorizontalAlignment="Left" Margin="475,75,0,0" VerticalAlignment="Top" BorderBrush="#FF05C46B" Checked="MiddleRadio_Checked"/>
+        <RadioButton x:Name="TechnicianRadio" Content="Technikum" HorizontalAlignment="Left" Margin="648,55,0,0" VerticalAlignment="Top" BorderBrush="#FF05C46B" Checked="TechnicianRadio_Checked"/>
+        <RadioButton x:Name="BrancheRadio" Content="Szkoła branżowa" HorizontalAlignment="Left" Margin="648,75,0,0" VerticalAlignment="Top" BorderBrush="#FF05C46B" Checked="BrancheRadio_Checked"/>
+        <RadioButton x:Name="StudyRadio" Content="Studia wyższe" HorizontalAlignment="Left" Margin="811,55,0,0" VerticalAlignment="Top" BorderBrush="#FF05C46B" Checked="StudyRadio_Checked"/>
+        <RadioButton x:Name="CustonRadio" Content="Własny" HorizontalAlignment="Left" Margin="811,75,0,0" VerticalAlignment="Top" BorderBrush="#FF05C46B" Checked="CustonRadio_Checked"/>
+
+    </Grid>
+</Window>

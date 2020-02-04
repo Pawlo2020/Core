@@ -1,0 +1,24 @@
+﻿<Page x:Class="Dynamics.Projects.Calendar_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dynamics.Projects"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Calendar_page" Width="1200" Height="609.1" Background="#FFDFE6E9">
+
+    <Grid>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="515" Margin="0,94,0,0" VerticalAlignment="Top" Width="1200" Background="#FFF0F0F0">
+            <StackPanel Name="CalendarContener" HorizontalAlignment="Center" Height="495" Margin="31,9,29,0" VerticalAlignment="Top" Width="1138" Background="#dfe4ea"/>
+
+        </Border>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="1200" Background="White">
+            <Label x:Name="DashboardLbl" Content="Kalendarz
+                   " Margin="21,20,1027,28" HorizontalAlignment="Center" FontSize="32" Width="150" FontFamily="Tw Cen MT" Foreground="#FF5F27CD"/>
+        </Border>
+        <Rectangle HorizontalAlignment="Left" RadiusX="5" RadiusY="5" Height="44" Margin="20,21,0,0" Stroke="#FF5F27CD" VerticalAlignment="Top" Width="147"/>
+        
+
+    </Grid>
+</Page>

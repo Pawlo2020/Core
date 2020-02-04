@@ -1,0 +1,21 @@
+﻿<Page x:Class="Education.Main_Pages.Dashboard"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Education.Main_Pages"
+      mc:Ignorable="d" 
+       d:DesignHeight="450" d:DesignWidth="800"
+      Title="Dashboard_page" Width="1200" Height="609" Background="#FFF0F0F0">
+
+    <Grid>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="1200" Background="White">
+            <Label x:Name="DashboardLbl" Content="Tablica" Margin="21,20,1069,28" HorizontalAlignment="Center" FontSize="32" Width="108" FontFamily="Tw Cen MT" Foreground="#05c46b"/>
+        </Border>
+        <Rectangle HorizontalAlignment="Left" RadiusX="5" RadiusY="5" Height="44" Margin="20,21,0,0" Stroke="#05c46b" VerticalAlignment="Top" Width="108"/>
+        <Label x:Name="FullDate" Content="Date"  HorizontalAlignment="Left" Margin="819,45,0,0" VerticalAlignment="Top" Width="346" Foreground="#05c46b" VerticalContentAlignment="Center" FontSize="22" Height="39" FontFamily="Tw Cen MT" HorizontalContentAlignment="Right"/>
+        <Label x:Name="TimeLbl" Content="Time" FontFamily="Tahoma" FontSize="18" HorizontalAlignment="Left" Margin="1042,15,0,0" VerticalAlignment="Top" Width="123" HorizontalContentAlignment="Right" Foreground="#FF2C3E50"/>
+        <Label x:Name="label" Content="Aktualny program: " HorizontalAlignment="Left" Margin="181,29,0,0" VerticalAlignment="Top" Foreground="#FF05C46B"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="Education.EduSplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Education"
+        mc:Ignorable="d"
+     Title="DynamicsSplash" Height="700" Width="1200" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" BorderBrush="#FF5F27CD"  Background="#05c46b">
+
+
+    <Grid>
+
+
+        <Label x:Name="DynLabel" Foreground="#dfe6e9" FontSize="80" Content="Education" FontFamily="Tw Cen MT" HorizontalAlignment="Left" Margin="514,298,0,0" VerticalAlignment="Top" Background="Transparent" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-7.306"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="2.372"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+        <Grid Margin="394,295,702,305">
+            
+        </Grid>
+
+    </Grid>
+</Window>

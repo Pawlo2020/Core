@@ -1,0 +1,201 @@
+﻿<UserControl x:Class="Core.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Core"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Width="361" Background="#FF182C61">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="149*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="168*"/>
+            <ColumnDefinition Width="193*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle x:Name="correctbq" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="26" Margin="12,357,0,0" VerticalAlignment="Top" Width="146" RadiusX="15" RadiusY="15" Opacity="0.75" Visibility="Hidden" Grid.Row="1"/>
+        <Label x:Name="correctcheck" Content="" HorizontalAlignment="Left" Margin="12,357,0,0" VerticalAlignment="Top" Width="146" Foreground="Red" Height="26" Background="{x:Null}" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" Grid.Row="1"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="21,21,0,0" TextWrapping="Wrap" Text="Rejestracja" VerticalAlignment="Top" UseLayoutRounding="False" FontSize="24" Foreground="White" Height="31.923" Width="112.547" Grid.Row="1"/>
+        <TextBox x:Name="loginreg" HorizontalAlignment="Left" Height="23" Margin="9,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Grid.Row="1" Grid.Column="1" Opacity="0.75"/>
+        <TextBlock x:Name="loginnamereg" HorizontalAlignment="Left" Margin="117,141,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Foreground="White" Height="16"/>
+        <TextBlock x:Name="passnamereg" HorizontalAlignment="Left" Margin="116,176,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Hasło" VerticalAlignment="Top" Foreground="White" Height="16"/>
+        <TextBox x:Name="emailreg" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="9,204,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Opacity="0.75"/>
+        <TextBlock x:Name="emailnamereg" HorizontalAlignment="Left" Margin="113,208,0,0" Grid.Row="1" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" Foreground="White" Height="16"/>
+        <TextBox x:Name="FMreg" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="9,66,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Opacity="0.75"/>
+        <TextBlock x:Name="FMnamereg" HorizontalAlignment="Left" Margin="123,69,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Imię" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="LMreg" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="9,100,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Opacity="0.75"/>
+        <TextBlock x:Name="LMnamereg" HorizontalAlignment="Left" Margin="96,103,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Nazwisko" VerticalAlignment="Top" Foreground="White" Height="16"/>
+        <ComboBox x:Name="comboDay" Grid.Column="1" SelectionChanged="comboDay_SelectionChanged" HorizontalAlignment="Left" Margin="10,236,0,0" Grid.Row="1" VerticalAlignment="Top" Width="41" MaxDropDownHeight="160" Opacity="0.75">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem Content="8"/>
+            <ComboBoxItem Content="9"/>
+            <ComboBoxItem Content="10"/>
+            <ComboBoxItem Content="11"/>
+            <ComboBoxItem Content="12"/>
+            <ComboBoxItem Content="13"/>
+            <ComboBoxItem Content="14"/>
+            <ComboBoxItem Content="15"/>
+            <ComboBoxItem Content="16"/>
+            <ComboBoxItem Content="17"/>
+            <ComboBoxItem Content="18"/>
+            <ComboBoxItem Content="19"/>
+            <ComboBoxItem Content="20"/>
+            <ComboBoxItem Content="21"/>
+            <ComboBoxItem Content="22"/>
+            <ComboBoxItem Content="23"/>
+            <ComboBoxItem Content="24"/>
+            <ComboBoxItem Content="25"/>
+            <ComboBoxItem Content="26"/>
+            <ComboBoxItem Content="27"/>
+            <ComboBoxItem Content="28"/>
+            <ComboBoxItem Content="29"/>
+            <ComboBoxItem Content="30"/>
+            <ComboBoxItem Content="31"/>
+
+
+        </ComboBox>
+        <ComboBox x:Name="comboMonth" Grid.Column="1" HorizontalAlignment="Left" Margin="56,236,0,0" Grid.Row="1" VerticalAlignment="Top" Width="41" SelectionChanged="comboDay_SelectionChanged" MaxDropDownHeight="160" RenderTransformOrigin="0.242,0.5" Opacity="0.75">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem Content="8"/>
+            <ComboBoxItem Content="9"/>
+            <ComboBoxItem Content="10"/>
+            <ComboBoxItem Content="11"/>
+            <ComboBoxItem Content="12"/>
+
+
+
+        </ComboBox>
+        <ComboBox x:Name="comboYear" Grid.Column="1" HorizontalAlignment="Left" Margin="102,236,0,0" Grid.Row="1" VerticalAlignment="Top" Width="59" SelectionChanged="comboDay_SelectionChanged" MaxDropDownHeight="160" Opacity="0.75">
+            <ComboBoxItem Content="2019"/>
+            <ComboBoxItem Content="2018"/>
+            <ComboBoxItem Content="2017"/>
+            <ComboBoxItem Content="2016"/>
+            <ComboBoxItem Content="2015"/>
+            <ComboBoxItem Content="2014"/>
+            <ComboBoxItem Content="2013"/>
+            <ComboBoxItem Content="2012"/>
+            <ComboBoxItem Content="2011"/>
+            <ComboBoxItem Content="2010"/>
+            <ComboBoxItem Content="2009"/>
+            <ComboBoxItem Content="2008"/>
+            <ComboBoxItem Content="2007"/>
+            <ComboBoxItem Content="2006"/>
+            <ComboBoxItem Content="2005"/>
+            <ComboBoxItem Content="2004"/>
+            <ComboBoxItem Content="2003"/>
+            <ComboBoxItem Content="2002"/>
+            <ComboBoxItem Content="2001"/>
+            <ComboBoxItem Content="2000"/>
+            <ComboBoxItem Content="1999"/>
+            <ComboBoxItem Content="1998"/>
+            <ComboBoxItem Content="1997"/>
+            <ComboBoxItem Content="1996"/>
+            <ComboBoxItem Content="1995"/>
+            <ComboBoxItem Content="1994"/>
+            <ComboBoxItem Content="1993"/>
+            <ComboBoxItem Content="1992"/>
+            <ComboBoxItem Content="1991"/>
+            <ComboBoxItem Content="1990"/>
+            <ComboBoxItem Content="1989"/>
+            <ComboBoxItem Content="1988"/>
+            <ComboBoxItem Content="1987"/>
+            <ComboBoxItem Content="1986"/>
+            <ComboBoxItem Content="1985"/>
+            <ComboBoxItem Content="1984"/>
+            <ComboBoxItem Content="1983"/>
+            <ComboBoxItem Content="1982"/>
+            <ComboBoxItem Content="1981"/>
+            <ComboBoxItem Content="1980"/>
+            <ComboBoxItem Content="1979"/>
+            <ComboBoxItem Content="1978"/>
+            <ComboBoxItem Content="1977"/>
+            <ComboBoxItem Content="1976"/>
+            <ComboBoxItem Content="1975"/>
+            <ComboBoxItem Content="1974"/>
+            <ComboBoxItem Content="1973"/>
+            <ComboBoxItem Content="1972"/>
+            <ComboBoxItem Content="1971"/>
+            <ComboBoxItem Content="1970"/>
+            <ComboBoxItem Content="1969"/>
+            <ComboBoxItem Content="1968"/>
+            <ComboBoxItem Content="1967"/>
+            <ComboBoxItem Content="1966"/>
+            <ComboBoxItem Content="1965"/>
+            <ComboBoxItem Content="1964"/>
+            <ComboBoxItem Content="1963"/>
+            <ComboBoxItem Content="1962"/>
+            <ComboBoxItem Content="1961"/>
+            <ComboBoxItem Content="1960"/>
+            <ComboBoxItem Content="1959"/>
+            <ComboBoxItem Content="1958"/>
+            <ComboBoxItem Content="1957"/>
+            <ComboBoxItem Content="1956"/>
+            <ComboBoxItem Content="1955"/>
+            <ComboBoxItem Content="1954"/>
+            <ComboBoxItem Content="1953"/>
+            <ComboBoxItem Content="1952"/>
+            <ComboBoxItem Content="1951"/>
+            <ComboBoxItem Content="1950"/>
+            <ComboBoxItem Content="1949"/>
+            <ComboBoxItem Content="1948"/>
+            <ComboBoxItem Content="1947"/>
+            <ComboBoxItem Content="1946"/>
+            <ComboBoxItem Content="1945"/>
+            <ComboBoxItem Content="1944"/>
+            <ComboBoxItem Content="1943"/>
+            <ComboBoxItem Content="1942"/>
+            <ComboBoxItem Content="1941"/>
+            <ComboBoxItem Content="1940"/>
+            <ComboBoxItem Content="1939"/>
+            <ComboBoxItem Content="1938"/>
+            <ComboBoxItem Content="1937"/>
+            <ComboBoxItem Content="1936"/>
+            <ComboBoxItem Content="1935"/>
+            <ComboBoxItem Content="1934"/>
+            <ComboBoxItem Content="1933"/>
+            <ComboBoxItem Content="1932"/>
+            <ComboBoxItem Content="1931"/>
+            <ComboBoxItem Content="1930"/>
+            <ComboBoxItem Content="1929"/>
+            <ComboBoxItem Content="1928"/>
+            <ComboBoxItem Content="1927"/>
+            <ComboBoxItem Content="1926"/>
+            <ComboBoxItem Content="1925"/>
+            <ComboBoxItem Content="1924"/>
+            <ComboBoxItem Content="1923"/>
+            <ComboBoxItem Content="1922"/>
+            <ComboBoxItem Content="1921"/>
+            <ComboBoxItem Content="1920"/>
+
+
+
+        </ComboBox>
+        <TextBlock x:Name="DOBnamereg" HorizontalAlignment="Left" Margin="64,239,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Data urodzenia" VerticalAlignment="Top" Foreground="White" Width="82" Height="16"/>
+        <TextBlock x:Name="dayname" HorizontalAlignment="Left" Margin="10,258,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Dzień" VerticalAlignment="Top" Foreground="White" Grid.Column="1" Width="41" FontSize="10" TextAlignment="Center"/>
+        <TextBlock x:Name="monthname" HorizontalAlignment="Left" Margin="56,258,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Miesiąc" VerticalAlignment="Top" Foreground="White" Grid.Column="1" FontSize="10" Width="41" TextAlignment="Center"/>
+        <TextBlock x:Name="yearname" HorizontalAlignment="Left" Margin="102,258,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Rok" VerticalAlignment="Top" Foreground="White" Grid.Column="1" FontSize="10" Width="59" TextAlignment="Center"/>
+        <TextBlock x:Name="citynamereg" HorizontalAlignment="Left" Margin="106,284,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Miasto" VerticalAlignment="Top" Foreground="White" Width="40"/>
+        <TextBox x:Name="cityreg" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,283,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" Opacity="0.75"/>
+        <TextBlock x:Name="citynamereg_Copy" HorizontalAlignment="Left" Margin="55,321,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Zdjęcie profilowe" VerticalAlignment="Top" Foreground="White" Width="91"/>
+        <Button x:Name="LoadImageBut" Content="Wczytaj..." Grid.Column="1" HorizontalAlignment="Left" Margin="10,319,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74" Click="LoadImageBut_Click" BorderBrush="{x:Null}" Foreground="White" Background="#FF374655"/>
+        <Button x:Name="registerfinalbut" Content="Zarejestruj" HorizontalAlignment="Left" Margin="9,357,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="registerfinalbut_Click" Background="#FF374655" BorderBrush="{x:Null}" Foreground="White"/>
+        <Button x:Name="returntologin" Content="Powrót" HorizontalAlignment="Left" Margin="10,29,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="returntologin_Click" Background="#FF374655" BorderBrush="{x:Null}" Foreground="White"/>
+        <PasswordBox x:Name="passregist" HorizontalAlignment="Left" Margin="10,170,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.Column="1" Width="151" Opacity="0.75" Height="22"/>
+
+    </Grid>
+</UserControl>

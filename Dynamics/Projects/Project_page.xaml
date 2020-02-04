@@ -1,0 +1,82 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dynamics.Projects"
+      xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" xmlns:ProjectPages="clr-namespace:Dynamics.Projects.ProjectPages" x:Class="Dynamics.Projects.Project_page"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Project_page" Height="609.1" Width="1200" Background="#FFF0F0F0">
+
+    <Page.Resources>
+
+
+        
+
+
+        <SolidColorBrush x:Key="ListBorder" Color="#828790"/>
+        
+
+    </Page.Resources>
+
+    <Grid>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="515" Margin="0,94,0,0" VerticalAlignment="Top" Width="1200">
+            <Border BorderThickness="1" Margin="55,81,55,54">
+                <ListView  x:Name="ProjectList" FontFamily="Tw Cen MT" FontSize="18" BorderBrush="#FF5F27CD" Background="#FFDFF1F0" FontWeight="Light" SelectionChanged="ProjectList_SelectionChanged" Margin="0,-1,-1,-1" >
+                    
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Margin="5,5,0,5" HorizontalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1060" />
+                                </Grid.ColumnDefinitions>
+                                <Rectangle Height="30" Width="1060" RadiusX="3" RadiusY="3" Fill="#FF786FA6" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                </Rectangle>
+                                <Grid VerticalAlignment="Center">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="630"></ColumnDefinition>
+                                        <ColumnDefinition Width="150"></ColumnDefinition>
+                                        <ColumnDefinition Width="150"></ColumnDefinition>
+                                        <ColumnDefinition Width="122"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="30"></RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock Padding="5" Foreground="White" VerticalAlignment="Center" Grid.Column="0" Text="{Binding Name}"/>
+                                    <TextBlock Padding="5" Foreground="White" VerticalAlignment="Center" Grid.Column="1" Text="{Binding START}"/>
+                                    <TextBlock Padding="5" Foreground="White" VerticalAlignment="Center" Grid.Column="2" Text="{Binding FINISH}"/>
+                                    <TextBlock Padding="5" Foreground="White" VerticalAlignment="Center" Grid.Column="3" Text="{Binding STATUS}"/>
+
+
+
+
+
+                                </Grid>
+                                
+                                
+                                
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+            </Border>
+        </Border>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="1200" Background="White">
+            <Label x:Name="DashboardLbl" Content="Projekty" Margin="21,20,1061,28" HorizontalAlignment="Center" FontSize="32" Width="116" FontFamily="Tw Cen MT" Foreground="#FF5F27CD"/>
+        </Border>
+        <Rectangle HorizontalAlignment="Left" RadiusX="5" RadiusY="5" Height="44" Margin="20,21,0,0" Stroke="#FF5F27CD" VerticalAlignment="Top" Width="119"/>
+        <Button x:Name="NewProjectBut" Content="+ Nowy projekt" HorizontalAlignment="Left" Margin="170,27,0,0" VerticalAlignment="Top" Width="157" Click="NewProjectBut_Click" Background="{x:Null}" BorderBrush="#FF5F27CD" Foreground="#FF5F27CD" FontSize="18" Height="32" VerticalContentAlignment="Center"/>
+        <Rectangle Fill="#FF786FA6" HorizontalAlignment="Left" Height="40" Margin="58,137,0,0" VerticalAlignment="Top" Width="162"/>
+        <Label x:Name="projectListLbl" Content="Lista projektów" HorizontalAlignment="Left" Margin="58,137,0,0" VerticalAlignment="Top" Width="162" Foreground="White" VerticalContentAlignment="Center" FontSize="22" Height="40" HorizontalContentAlignment="Center" FontFamily="Tw Cen MT"/>
+        <ComboBox  SelectedIndex="0" x:Name="comboBox" HorizontalAlignment="Left" Margin="1056,141,0,0" VerticalAlignment="Top" Width="87" >
+            <ComboBoxItem x:Name="ALL" Content="Wszystkie"/>
+            <ComboBoxItem x:Name="ACTIVE" Content="Trwające"/>
+            <ComboBoxItem x:Name="INACTIVE" Content="Ukończone"/>
+        </ComboBox>
+        <Label x:Name="StateSortLbl" Content="Sortuj wg statusu:" HorizontalAlignment="Left" Margin="949,139,0,0" VerticalAlignment="Top" Height="30"/>
+    </Grid>
+</Page>

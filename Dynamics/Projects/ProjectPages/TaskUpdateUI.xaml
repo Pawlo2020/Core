@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Dynamics.Projects.ProjectPages.TaskUpdateUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Dynamics.Projects.ProjectPages"
+             mc:Ignorable="d" 
+             d:DesignHeight="448" d:DesignWidth="940" Background="#FFF0F0F0">
+    <Grid>
+        <TextBox x:Name="NewTaskNametxt" HorizontalAlignment="Left" Height="32" Margin="358,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="348" Background="#FFF5F6FA" BorderBrush="#FF5F27CD" SelectionBrush="#FF8B6FC3" FontSize="16" VerticalContentAlignment="Center"/>
+        <Label x:Name="NewTaskNameLbl" Content="Nazwa zadania" HorizontalAlignment="Left" Margin="212,54,0,0" VerticalAlignment="Top" Width="142" FontSize="18"/>
+        <DatePicker x:Name="NewStartTaskTimeDP" HorizontalAlignment="Left" Margin="358,102,0,0" VerticalAlignment="Top" Width="142" Cursor="Hand" Height="32" BorderBrush="#FF5F27CD"/>
+        <Label x:Name="NewStartTimeLbl" Content="Data rozpoczęcia" HorizontalAlignment="Left" Margin="196,100,0,0" VerticalAlignment="Top" FontSize="18" Width="148"/>
+        <DatePicker x:Name="NewFinishTaskTimeDP" HorizontalAlignment="Left" Margin="358,146,0,0" VerticalAlignment="Top" Width="142" Height="32" BorderBrush="#FF5F27CD"/>
+        <Label x:Name="NewFinishTimeLbl" Content="Data zakończenia" HorizontalAlignment="Left" Margin="194,144,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="NewDescriptionTasktxt" HorizontalAlignment="Left" Height="126" Margin="358,194,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="348" Background="#FFF5F6FA" BorderBrush="#FF5F27CD" SelectionBrush="#FF8B6FC3"/>
+        <Label x:Name="NewDescriptionTaskLbl" Content="Opis zadania" HorizontalAlignment="Left" Margin="232,190,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="UpdateBut" Content="Zaktualizuj dane" HorizontalAlignment="Left" Margin="401,368,0,0" VerticalAlignment="Top" Width="122" Click="SaveProjectBut_Click" Background="{x:Null}" BorderBrush="#FF5F27CD" Foreground="#FF5F27CD" FontSize="14"/>
+
+    </Grid>
+</UserControl>
